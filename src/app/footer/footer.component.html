@@ -1,0 +1,33 @@
+<footer>
+    <div class="footer_content">
+        <div class="footer_menus">
+            <ul class="menus_services">
+                <li>Services</li>
+                <li><a href="#">How To Order</a></li>
+                <li><a href="#">Our Product</a></li>
+                <li><a href="#">Order Status</a></li>
+                <li><a href="#">Promo</a></li>
+                <li><a href="#">Payment Method</a></li>
+            </ul>
+            <ul class="social_links">
+                <li>Follow</li>
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a> Facebook</li>  
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a>Twitter</li>  
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a>Instagram</li>  
+                <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a>Whatsapp</li>  
+            </ul>
+        </div>
+        <div class="contact_form">
+            <div class="form">
+                <h3>SEND YOUR QUERY!</h3>
+                <form action="" (ngSubmit)="formSubmit()" #myForm="ngForm">
+                    <input type="text" name="Fname" id="name" placeholder="Your First Name" ngModel required autocomplete="off"><br>
+                    <input type="text" name="Lname" id="email" placeholder="Your Last Name" ngModel required autocomplete="off"><br>
+                    <input type="email" name="Email" id="contact" placeholder="Your Email" ngModel required email autocomplete="off"><br>
+                    <textarea name="message" id="message" cols="20" rows="6" placeholder="Message" style="resize: none;" ngModel required></textarea><br>
+                    <button type="submit" value="submit" [disabled]="myForm.invalid">Send Request</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</footer>

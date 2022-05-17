@@ -1,0 +1,80 @@
+footer{
+    width: 100%;
+    height: 90vh;
+    outline: 1px solid red;
+    background-color: #f4f9f4;
+    display: grid;
+    place-items: center;
+    color: #6c9894;
+} 
+footer .footer_content{
+    width: 60%;
+    min-height: 60%;
+    display: grid;
+    gap: 5em;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+footer .footer_content .footer_menus{
+    display: flex;
+    justify-content: space-around;
+}
+footer .footer_content .contact_form{
+    text-align: center;
+}
+footer .footer_content .footer_menus ul.menus_services li,
+footer .footer_content .footer_menus .social_links li{
+    list-style: none;
+    font-size: 1.2rem;
+    line-height: 1.7em;
+}
+footer .footer_content .footer_menus ul.menus_services li:first-child,
+footer .footer_content .footer_menus .social_links li:first-child
+{
+    font-size: 2rem;
+    font-weight: 800;
+}
+footer .footer_content .footer_menus ul.menus_services li a,
+footer .footer_content .footer_menus .social_links a{
+    text-decoration: none;
+    color: #6c9894;
+}
+.fa-brands{
+    font-size: 1rem;
+    background-color: #6c9894;
+    color: #f4f9f4;
+    padding: 6px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.fa-brands:hover{
+    background-color: #f4f9f4;
+    color: #6c9894;
+    outline: 1px solid #6c9894;
+    transform: scale(1.1);
+}
+.fa-facebook-f{
+    padding: 6px 8.5px;
+}
+
+footer .contact_form .form input, footer .contact_form .form textarea,footer .contact_form .form button {
+    padding: 6px 11px;
+    width: 75%;
+    border: none;
+    outline: none;
+    margin: 0.8rem 0;
+}
+footer .contact_form .form input, footer .contact_form .form textarea{
+    border-bottom: 2px solid #6c9894;
+    background: transparent;
+    margin: 0.8rem 0;
+}
+footer .contact_form .form button {
+    background-color: #6c9894;
+    color: #f4f9f4;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+footer .contact_form .form input.ng-invalid.ng-touched, footer .contact_form .form textarea.ng-invalid.ng-touched{
+    border-bottom: 2px solid red;
+}
